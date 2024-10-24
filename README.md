@@ -24,12 +24,13 @@ int main()
     head->next=NULL;
     int date;
     char buffer[501];
+    //读取文件内容
     FILE *file=fopen("D:\\A\\CS-EASY-02-1.txt","r+");
     while (fgets(buffer,500,file)!=NULL)
     {
     option=buffer[0];
     int num=2;
-    switch (option)
+    switch (option)//根据指令来进行操作
     {
     case 'H':
         node*front=NULL;
